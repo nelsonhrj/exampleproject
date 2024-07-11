@@ -1,0 +1,417 @@
+CRITICAL - 2024-07-11 15:42:16 --> Error: Cannot access protected property CodeIgniter\HTTP\Files\UploadedFile::$name
+[Method: POST, Route: welcome]
+in APPPATH/Controllers/Welcome.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 16:13:43 --> ErrorException: Undefined property: CodeIgniter\HTTP\Files\UploadedFile::$getName
+[Method: POST, Route: welcome]
+in APPPATH/Controllers/Welcome.php on line 21.
+ 1 APPPATH/Controllers/Welcome.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\Files\\UploadedFile::$getName', '/Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php', 21)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 16:15:44 --> Error: Cannot access protected property CodeIgniter\HTTP\Files\UploadedFile::$name
+[Method: POST, Route: welcome]
+in APPPATH/Controllers/Welcome.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 16:23:06 --> ErrorException: Undefined variable $newName
+[Method: POST, Route: welcome]
+in APPPATH/Controllers/Welcome.php on line 33.
+ 1 APPPATH/Controllers/Welcome.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newName', '/Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 16:24:10 --> ErrorException: Undefined variable $newName
+[Method: POST, Route: welcome]
+in APPPATH/Controllers/Welcome.php on line 33.
+ 1 APPPATH/Controllers/Welcome.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newName', '/Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:33:23 --> Error: Class "App\Controllers\UserModel" not found
+[Method: GET, Route: /]
+in APPPATH/Controllers/Welcome.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-11 20:35:52 --> mysqli_sql_exception: No database selected in /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/MacPro/Sites/exampleproject/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/MacPro/Sites/exampleproject/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/MacPro/Sites/exampleproject/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/MacPro/Sites/exampleproject/app/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+#8 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(933): App\Controllers\Welcome->index()
+#9 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+#10 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/MacPro/Sites/exampleproject/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Users/MacPro/Sites/exampleproject/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/MacPro/Sites/exampleproject/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-07-11 20:35:52 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:35:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:35:52 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `users`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-11 20:37:18 --> mysqli_sql_exception: No database selected in /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/MacPro/Sites/exampleproject/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/MacPro/Sites/exampleproject/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/MacPro/Sites/exampleproject/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/MacPro/Sites/exampleproject/app/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+#8 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(933): App\Controllers\Welcome->index()
+#9 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+#10 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/MacPro/Sites/exampleproject/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Users/MacPro/Sites/exampleproject/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/MacPro/Sites/exampleproject/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-07-11 20:37:18 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:37:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:37:18 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `users`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-11 20:39:27 --> mysqli_sql_exception: No database selected in /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/MacPro/Sites/exampleproject/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/MacPro/Sites/exampleproject/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/MacPro/Sites/exampleproject/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/MacPro/Sites/exampleproject/app/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+#8 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(933): App\Controllers\Welcome->index()
+#9 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+#10 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/MacPro/Sites/exampleproject/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Users/MacPro/Sites/exampleproject/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/MacPro/Sites/exampleproject/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-07-11 20:39:27 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:39:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:39:27 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `users`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-11 20:41:31 --> mysqli_sql_exception: Table 'test.users' doesn't exist in /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/MacPro/Sites/exampleproject/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/MacPro/Sites/exampleproject/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/MacPro/Sites/exampleproject/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/MacPro/Sites/exampleproject/app/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+#8 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(933): App\Controllers\Welcome->index()
+#9 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+#10 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/MacPro/Sites/exampleproject/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Users/MacPro/Sites/exampleproject/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/MacPro/Sites/exampleproject/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-07-11 20:41:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.users' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:41:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:41:31 --> [Caused by] mysqli_sql_exception: Table 'test.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `users`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-11 20:41:52 --> mysqli_sql_exception: Table 'test.users' doesn't exist in /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/MacPro/Sites/exampleproject/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/MacPro/Sites/exampleproject/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/MacPro/Sites/exampleproject/system/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/MacPro/Sites/exampleproject/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/MacPro/Sites/exampleproject/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/MacPro/Sites/exampleproject/app/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+#8 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(933): App\Controllers\Welcome->index()
+#9 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+#10 /Users/MacPro/Sites/exampleproject/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/MacPro/Sites/exampleproject/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 /Users/MacPro/Sites/exampleproject/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/MacPro/Sites/exampleproject/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-07-11 20:41:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.users' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:41:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:41:52 --> [Caused by] mysqli_sql_exception: Table 'test.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `users`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Models/UserModel.php(15): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Welcome.php(39): App\Models\UserModel->getUsers()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-11 20:49:06 --> ErrorException: Undefined variable $userData
+[Method: POST, Route: welcome]
+in APPPATH/Controllers/Welcome.php on line 36.
+ 1 APPPATH/Controllers/Welcome.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', '/Users/MacPro/Sites/exampleproject/app/Controllers/Welcome.php', 36)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Welcome->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
